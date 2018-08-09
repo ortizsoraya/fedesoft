@@ -1,0 +1,13 @@
+<h1>Bienvenido</h1>
+<% if user_signed_in? %>
+
+
+    <h3>Bienvenido <%= current_user.name %> </h3>
+    <div class="row">
+       <%= render @images %>
+    </div>
+<% else %> 
+   <p>Por favor Registrese</p> 
+   
+<% end %>   
+
